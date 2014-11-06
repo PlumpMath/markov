@@ -2,8 +2,7 @@
 
 (def order 5)
 
-(defn rand-occurence
-  [freq-map]
+(defn rand-occurence [freq-map]
   (let [total-count (reduce + (vals freq-map))
         n (rand-int total-count)]
       (loop [sum 0
